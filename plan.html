@@ -14,12 +14,15 @@
     <div id="planContent"></div>
     <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4" onclick="window.print()">打印策划书</button>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const ritualType = urlParams.get('type');
-        const ritualPlan = urlParams.get('plan');
+        const ritualType = localStorage.getItem('ritualType');
+        const ritualPlan = localStorage.getItem('ritualPlan');
 
         const planContent = document.getElementById('planContent');
         planContent.innerHTML = `<p class="text-lg mb-4">你们最适合的仪式类型是：${ritualType}</p>${ritualPlan}`;
+
+        // 清除localStorage数据，避免影响后续测试
+        localStorage.removeItem('ritualType');
+        localStorage.removeItem('ritualPlan');
     </script>
 </body>
 
