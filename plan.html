@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>专属仪式策划书</title>
+</head>
+
+<body class="p-8">
+    <h1 class="text-3xl font-bold text-center mb-8">《专属仪式策划书》</h1>
+    <div id="planContent"></div>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4" onclick="window.print()">打印策划书</button>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const ritualType = urlParams.get('type');
+        const ritualPlan = urlParams.get('plan');
+
+        const planContent = document.getElementById('planContent');
+        planContent.innerHTML = `<p class="text-lg mb-4">你们最适合的仪式类型是：${ritualType}</p>${ritualPlan}`;
+    </script>
+</body>
+
+</html>
+    

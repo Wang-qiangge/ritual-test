@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>情侣仪式类型测试</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold text-center mb-8">10 道题测出情侣最适合的仪式类型</h1>
+        <form id="testForm">
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">1. 你们更喜欢哪种约会场景？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q1" value="A" class="mr-2">浪漫的烛光晚餐
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q1" value="B" class="mr-2">刺激的户外探险
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q1" value="C" class="mr-2">温馨的居家观影
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">2. 纪念日时，你们希望收到什么样的礼物？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q2" value="A" class="mr-2">昂贵的珠宝首饰
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q2" value="B" class="mr-2">亲手制作的手工艺品
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q2" value="C" class="mr-2">一次旅行的机会
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">3. 你们觉得情侣之间最重要的是什么？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q3" value="A" class="mr-2">激情与浪漫
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q3" value="B" class="mr-2">相互理解与支持
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q3" value="C" class="mr-2">共同的兴趣爱好
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">4. 以下哪种活动最能让你们感到幸福？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q4" value="A" class="mr-2">在众人面前深情表白
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q4" value="B" class="mr-2">一起完成一件有意义的事情
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q4" value="C" class="mr-2">安静地依偎在一起
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">5. 对于未来的生活，你们更倾向于？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q5" value="A" class="mr-2">充满惊喜和变化
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q5" value="B" class="mr-2">稳定而温馨
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q5" value="C" class="mr-2">有共同的目标并为之奋斗
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">6. 你们喜欢哪种风格的音乐？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q6" value="A" class="mr-2">流行浪漫的情歌
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q6" value="B" class="mr-2">激昂的摇滚音乐
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q6" value="C" class="mr-2">舒缓的古典音乐
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">7. 你们平时的相处模式是？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q7" value="A" class="mr-2">经常有甜蜜的互动和拥抱
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q7" value="B" class="mr-2">互相鼓励和竞争
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q7" value="C" class="mr-2">安静地陪伴，偶尔交流
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">8. 当遇到困难时，你们会？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q8" value="A" class="mr-2">一起勇敢面对，制造浪漫氛围缓解压力
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q8" value="B" class="mr-2">冷静分析，共同寻找解决办法
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q8" value="C" class="mr-2">互相安慰，慢慢度过难关
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">9. 你们理想中的婚礼是？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q9" value="A" class="mr-2">奢华浪漫的大型婚礼
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q9" value="B" class="mr-2">简约而有意义的小型婚礼
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q9" value="C" class="mr-2">户外自然风格的婚礼
+                </label>
+            </div>
+            <div class="mb-4 bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-semibold">10. 你们更愿意在哪里度过一个特殊的夜晚？</p>
+                <label class="block my-2">
+                    <input type="radio" name="q10" value="A" class="mr-2">高档的酒店套房
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q10" value="B" class="mr-2">自己温馨的小窝
+                </label>
+                <label class="block my-2">
+                    <input type="radio" name="q10" value="C" class="mr-2">海边的帐篷
+                </label>
+            </div>
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                onclick="submitTest()">提交测试</button>
+        </form>
+    </div>
+    <script>
+        function submitTest() {
+            const form = document.getElementById('testForm');
+            const formData = new FormData(form);
+            let scoreA = 0;
+            let scoreB = 0;
+            let scoreC = 0;
+            for (const [key, value] of formData.entries()) {
+                if (value === 'A') {
+                    scoreA++;
+                } else if (value === 'B') {
+                    scoreB++;
+                } else if (value === 'C') {
+                    scoreC++;
+                }
+            }
+            let ritualType = '';
+            let ritualPlan = '';
+            if (scoreA >= scoreB && scoreA >= scoreC) {
+                ritualType = '浪漫奢华型仪式';
+                ritualPlan = `
+                <div class="printable-section">
+                    <h2 class="text-2xl font-bold mb-2">仪式主题</h2>
+                    <p class="mb-4">浪漫星空下的永恒之约</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式时间</h2>
+                    <p class="mb-4">[具体时间]，选择一个晴朗的夜晚，以便更好地欣赏星空。</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式地点</h2>
+                    <p class="mb-4">一家高档的私人庄园，庄园内有广阔的草坪和美丽的花园。</p>
+                    <h2 class="text-2xl font-bold mb-2">场地布置</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>入口处搭建一个华丽的拱门，用白色的鲜花和灯带装饰。</li>
+                        <li>草坪上铺设一条红色的地毯，两侧摆放着精美的烛台，烛台上插着香薰蜡烛。</li>
+                        <li>搭建一个圆形的舞台，舞台背景是一幅巨大的星空幕布，周围环绕着闪烁的星星灯。</li>
+                        <li>场地周围设置多个休息区，摆放着舒适的沙发和茶几，上面放置着鲜花和水果。</li>
+                    </ul>
+                    <h2 class="text-2xl font-bold mb-2">流程安排</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>宾客签到：在入口处设置签到台，宾客签到后领取一份精美的纪念品。</li>
+                        <li>开场表演：邀请专业的乐队演奏浪漫的情歌，为仪式营造氛围。</li>
+                        <li>情侣入场：情侣手牵手沿着红地毯缓缓走向舞台，全场宾客鼓掌祝福。</li>
+                        <li>爱情誓言：情侣在舞台上互相宣读爱情誓言，表达对彼此的爱意和承诺。</li>
+                        <li>交换信物：情侣交换昂贵的珠宝首饰，作为爱情的见证。</li>
+                        <li>浪漫晚宴：在庄园内的餐厅举行浪漫的烛光晚宴，提供精致的美食和顶级的葡萄酒。</li>
+                        <li>烟花表演：晚宴结束后，在草坪上举行烟花表演，让情侣和宾客共同欣赏美丽的烟花。</li>
+                        <li>结束：仪式结束后，情侣和宾客在庄园内自由交流，留下美好的回忆。</li>
+                    </ol>
+                    <h2 class="text-2xl font-bold mb-2">注意事项</h2>
+                    <ul class="list-disc pl-5">
+                        <li>提前与庄园和供应商沟通，确保场地和服务的质量。</li>
+                        <li>安排专业的摄影师和摄像师，记录下仪式的每一个精彩瞬间。</li>
+                        <li>为宾客提供足够的休息和娱乐设施，确保他们的体验舒适。</li>
+                    </ul>
+                </div>
+                `;
+            } else if (scoreB >= scoreA && scoreB >= scoreC) {
+                ritualType = '温馨简约型仪式';
+                ritualPlan = `
+                <div class="printable-section">
+                    <h2 class="text-2xl font-bold mb-2">仪式主题</h2>
+                    <p class="mb-4">温馨小家的甜蜜时刻</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式时间</h2>
+                    <p class="mb-4">[具体时间]，选择一个周末的晚上，让情侣和亲朋好友有足够的时间相聚。</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式地点</h2>
+                    <p class="mb-4">情侣温馨的小窝。</p>
+                    <h2 class="text-2xl font-bold mb-2">场地布置</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>客厅用彩色的气球和彩带装饰，营造出欢快的氛围。</li>
+                        <li>摆放一些情侣的照片，回忆美好的时光。</li>
+                        <li>在餐桌上铺上漂亮的桌布，摆放上鲜花和蜡烛。</li>
+                    </ul>
+                    <h2 class="text-2xl font-bold mb-2">流程安排</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>宾客到来：亲朋好友陆续来到情侣家中，互相交流问候。</li>
+                        <li>开场致辞：情侣发表简短的开场致辞，感谢亲朋好友的到来。</li>
+                        <li>美食分享：大家一起动手制作美食，如披萨、蛋糕等，然后围坐在一起分享。</li>
+                        <li>手工制作：一起完成一件有意义的手工艺品，如拼图、陶艺等，增进彼此的感情。</li>
+                        <li>游戏环节：组织一些有趣的游戏，如猜谜语、真心话大冒险等，让大家在游戏中欢笑。</li>
+                        <li>温馨时刻：情侣分享他们的爱情故事，互相表达爱意。</li>
+                        <li>结束：仪式结束后，亲朋好友可以自由交流，然后陆续离开。</li>
+                    </ol>
+                    <h2 class="text-2xl font-bold mb-2">注意事项</h2>
+                    <ul class="list-disc pl-5">
+                        <li>提前准备好制作美食和手工艺品的材料。</li>
+                        <li>确保家中有足够的座位和空间，让宾客感到舒适。</li>
+                        <li>注意安全，避免在制作美食和手工艺品过程中发生意外。</li>
+                    </ul>
+                </div>
+                `;
+            } else {
+                ritualType = '自然户外型仪式';
+                ritualPlan = `
+                <div class="printable-section">
+                    <h2 class="text-2xl font-bold mb-2">仪式主题</h2>
+                    <p class="mb-4">大自然中的浪漫之约</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式时间</h2>
+                    <p class="mb-4">[具体时间]，选择一个天气晴朗的日子，以便更好地享受户外的美景。</p>
+                    <h2 class="text-2xl font-bold mb-2">仪式地点</h2>
+                    <p class="mb-4">海边的一片沙滩，周围有美丽的海景和清新的空气。</p>
+                    <h2 class="text-2xl font-bold mb-2">场地布置</h2>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>在沙滩上搭建一个简单的帐篷，用彩色的旗帜和贝壳装饰。</li>
+                        <li>摆放一些沙滩椅和遮阳伞，让宾客可以舒适地休息。</li>
+                        <li>在帐篷周围设置一个篝火区，用于晚上的篝火晚会。</li>
+                    </ul>
+                    <h2 class="text-2xl font-bold mb-2">流程安排</h2>
+                    <ol class="list-decimal pl-5 mb-4">
+                        <li>到达目的地：情侣和宾客一起乘坐交通工具到达海边的沙滩。</li>
+                        <li>自由活动：大家可以在沙滩上自由活动，如游泳、冲浪、捡贝壳等。</li>
+                        <li>爱情仪式：在沙滩上举行简单的爱情仪式，情侣互相宣读爱情誓言，交换信物。</li>
+                        <li>野餐时间：大家一起享用美味的野餐，品尝各种美食和水果。</li>
+                        <li>户外探险：组织一些户外探险活动，如徒步、露营等，让情侣和宾客更好地亲近大自然。</li>
+                        <li>篝火晚会：晚上，在篝火区举行篝火晚会，大家围坐在一起唱歌、跳舞、聊天。</li>
+                        <li>结束：仪式结束后，大家收拾好行李，乘坐交通工具返回。</li>
+                    </ol>
+                    <h2 class="text-2xl font-bold mb-2">注意事项</h2>
+                    <ul class="list-disc pl-5">
+                        <li>提前了解天气情况，做好防晒和防雨措施。</li>
+                        <li>准备好必要的户外装备，如帐篷、睡袋、防潮垫等。</li>
+                        <li>注意安全，避免在户外活动过程中发生意外。</li>
+                    </ul>
+                </div>
+                `;
+            }
+
+            const newUrl = `plan.html?type=${encodeURIComponent(ritualType)}&plan=${encodeURIComponent(ritualPlan)}`;
+            window.location.href = newUrl;
+        }
+    </script>
+</body>
+
+</html>
+    
